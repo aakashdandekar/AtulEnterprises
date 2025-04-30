@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atul Enterprises</title>
+  <style>
+    :root {
+      --charcoal: #2C3E50;
+      --gold: #F1C40F;
+      --white: #FFFFFF;
+      --light-gray: #F8F9FA;
+      --dark-blue: #1B263B;
+      --red: #C0392B;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--white);
+      color: var(--charcoal);
+    }
+
+    header {
+      background-color: var(--charcoal);
+      color: var(--white);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: var(--white);
+      margin-left: 1.5rem;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    .hero {
+      background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('construction-bg.jpg') center/cover no-repeat;
+      color: var(--white);
+      text-align: center;
+      padding: 120px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero button {
+      background-color: var(--gold);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      color: var(--charcoal);
+    }
+
+    .hero button:hover {
+      background-color: var(--red);
+      color: var(--white);
+    }
+
+    .section {
+      padding: 4rem 2rem;
+    }
+
+    .section h2 {
+      color: var(--dark-blue);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .services {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: var(--white);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      width: 30%;
+      min-width: 280px;
+      margin: 1rem;
+      padding: 1.5rem;
+      border-left: 5px solid var(--gold);
+    }
+
+    .contact {
+      background-color: var(--charcoal);
+      color: var(--white);
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .contact button {
+      background-color: var(--gold);
+      color: var(--charcoal);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: var(--charcoal);
+      color: var(--white);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 style="color: var(--gold);">Atul Enterprises</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Your Vision, Our Foundation</h1>
+    <p>Reliable construction services with innovation and integrity.</p>
+    <button>Get a Quote</button>
+  </section>
+
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Residential Construction</h3>
+        <p>Expert design and execution for modern, efficient homes.</p>
+      </div>
+      <div class="card">
+        <h3>Commercial Projects</h3>
+        <p>We deliver strong, scalable solutions for business spaces.</p>
+      </div>
+      <div class="card">
+        <h3>Renovation & Remodeling</h3>
+        <p>Transforming old spaces into vibrant, functional areas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Get in Touch</h2>
+    <p>Have a project in mind? Let’s build something great together.</p>
+    <button>Contact Us</button>
+  </section>
+
+  <footer>
+    &copy; 2025 Atul Enterprises. All rights reserved.
+  </footer>
+</body>
+</html>
